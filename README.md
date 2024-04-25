@@ -33,3 +33,9 @@ levels = [-100, -10, 1, 100, 200, 400, 800, 1600, 3200]
 f['HT'].plot(levels=levels, cmap='terrain')
 f.csp.cno.drawstates()
 ```
+
+Open more examples:
+
+* [On SageMaker](https://studiolab.sagemaker.aws/import/github/https://github.com/barronh/epaaws/blob/main/samples/example.ipynb)
+* [On Colab](https://colab.research.google.com/github/barronh/epaaws/blob/main/samples/example.ipynb)
+* [On Binder](https://mybinder.org/v2/gh/barronh/epaaws/HEAD?labpath=samples%2Fexample.ipynb)

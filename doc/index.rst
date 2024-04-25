@@ -7,33 +7,18 @@ Welcome to epaaws's documentation!
 ==================================
 
 `epaaws` is a library of functions to facilitate analysis of EPA's data on
-AWS S3 buckets thru Amazon's Registry of Open Data.[1] At present, this only
+AWS S3 buckets thru Amazon's Registry of Open Data.[1]_ At present, this only
 includes the epa-2022-modeling-platform (see module mp2022). For more
-information, see the  `documentation pages <https://barronh.github.io/epaaws>`_.
+information, see the examples that include installation instructions.
 
-Citations:
-1. https://registry.opendata.aws/epa-2022-modeling-platform/
+Or, try it live in a notebook:
 
-Install for Python3
--------------------
+* `On SageMaker <https://studiolab.sagemaker.aws/import/github/https://github.com/barronh/epaaws/blob/main/samples/example.ipynb>`_
+* `On Colab <https://colab.research.google.com/github/barronh/epaaws/blob/main/samples/example.ipynb>`_
+* `On Binder <https://mybinder.org/v2/gh/barronh/epaaws/HEAD?labpath=samples%2Fexample.ipynb>`_
 
-.. code-block:: sh
 
-    python -m pip epaaws
-
-Example
--------
-
-Example of how to plot the terrain height from a GRIDCRO2D file.
-
-.. code-block:: python
-
-    import epaaws
-
-    f = epaaws.mp2022.open_gridcro2d('2022-01-01')
-    levels = [-100, -10, 1, 100, 200, 400, 800, 1600, 3200]
-    f['HT'].plot(levels=levels, cmap='terrain')
-    f.csp.cno.drawstates()
+.. [1] https://registry.opendata.aws/epa-2022-modeling-platform/
 
 
 Issues
