@@ -30,10 +30,10 @@ for mciptype in mciptypes:
     {mciptype.lower()} : xarray.Dataset
         File from S3 loaded into memory.
     """
-    exec(f"""def open_{mciptype.lower()}(date, domain='.12US1.35L.'):
+    exec(f"""def open_{mciptype.lower()}(date, domain='.12US1.35L.', cache=True):
     \"\"\"{tdoc}\"\"\"
     bucket = 'epa-2022-modeling-platform'
     tmpl = f'MCIP/{mciptype}{{domain}}%y%m%d'
-    return open_date(date, tmpl=tmpl, bucket=bucket)
+    return open_date(date, tmpl=tmpl, bucket=bucket, cache=cache)
     """)
     __all__.append(f'open_{mciptype.lower()}')
