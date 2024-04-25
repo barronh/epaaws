@@ -1,0 +1,21 @@
+epaaws.tests package
+====================
+
+Submodules
+----------
+
+epaaws.tests.test\_main module
+------------------------------
+
+.. automodule:: epaaws.tests.test_main
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: epaaws.tests
+   :members:
+   :undoc-members:
+   :show-inheritance:

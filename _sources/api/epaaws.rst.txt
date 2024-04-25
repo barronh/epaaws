@@ -1,0 +1,37 @@
+epaaws package
+==============
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 1
+
+   epaaws.tests
+
+Submodules
+----------
+
+epaaws.mp2022 module
+--------------------
+
+.. automodule:: epaaws.mp2022
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+epaaws.util module
+------------------
+
+.. automodule:: epaaws.util
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: epaaws
+   :members:
+   :undoc-members:
+   :show-inheritance:

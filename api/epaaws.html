@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>epaaws package &#8212; epaaws 1.0.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/plot_directive.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sg_gallery.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sg_gallery-binder.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sg_gallery-dataframe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sg_gallery-rendered-html.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/design-tabs.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="epaaws.tests package" href="epaaws.tests.html" />
+    <link rel="prev" title="GRIDCRO2D Terrain Height Plot" href="../auto_examples/plot_gridcro2d.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="epaaws-package">
+<h1>epaaws package<a class="headerlink" href="#epaaws-package" title="Permalink to this heading">¶</a></h1>
+<section id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this heading">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="epaaws.tests.html">epaaws.tests package</a></li>
+</ul>
+</div>
+</section>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="module-epaaws.mp2022">
+<span id="epaaws-mp2022-module"></span><h2>epaaws.mp2022 module<a class="headerlink" href="#module-epaaws.mp2022" title="Permalink to this heading">¶</a></h2>
+<section id="mp2022">
+<h3>mp2022<a class="headerlink" href="#mp2022" title="Permalink to this heading">¶</a></h3>
+<p>The mp2022 module provides an interface to Modeling Platform 2022
+interface.</p>
+</section>
+<dl class="py function">
+<dt class="sig sig-object py" id="epaaws.mp2022.open_gridbdy2d">
+<span class="sig-prename descclassname"><span class="pre">epaaws.mp2022.</span></span><span class="sig-name descname"><span class="pre">open_gridbdy2d</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">date</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">domain</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'.12US1.35L.'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cache</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#epaaws.mp2022.open_gridbdy2d" title="Permalink to this definition">¶</a></dt>
+<dd><p>open a GRIDBDY2D
+:param date: Any date parsable by pandas.to_datetime
+:type date: str or date-like
+:param domain: Domain string (eg, .12US1.35L.)
+:type domain: str</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>gridbdy2d</strong> – File from S3 loaded into memory.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>xarray.Dataset</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="epaaws.mp2022.open_gridcro2d">
+<span class="sig-prename descclassname"><span class="pre">epaaws.mp2022.</span></span><span class="sig-name descname"><span class="pre">open_gridcro2d</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">date</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">domain</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'.12US1.35L.'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cache</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#epaaws.mp2022.open_gridcro2d" title="Permalink to this definition">¶</a></dt>
+<dd><p>open a GRIDCRO2D
+:param date: Any date parsable by pandas.to_datetime
+:type date: str or date-like
+:param domain: Domain string (eg, .12US1.35L.)
+:type domain: str</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>gridcro2d</strong> – File from S3 loaded into memory.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>xarray.Dataset</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="epaaws.mp2022.open_griddot2d">
+<span class="sig-prename descclassname"><span class="pre">epaaws.mp2022.</span></span><span class="sig-name descname"><span class="pre">open_griddot2d</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">date</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">domain</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'.12US1.35L.'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cache</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#epaaws.mp2022.open_griddot2d" title="Permalink to this definition">¶</a></dt>
+<dd><p>open a GRIDDOT2D
+:param date: Any date parsable by pandas.to_datetime
+:type date: str or date-like
+:param domain: Domain string (eg, .12US1.35L.)
+:type domain: str</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>griddot2d</strong> – File from S3 loaded into memory.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>xarray.Dataset</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="epaaws.mp2022.open_lufrac_cro">
+<span class="sig-prename descclassname"><span class="pre">epaaws.mp2022.</span></span><span class="sig-name descname"><span class="pre">open_lufrac_cro</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">date</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">domain</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'.12US1.35L.'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cache</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#epaaws.mp2022.open_lufrac_cro" title="Permalink to this definition">¶</a></dt>
+<dd><p>open a LUFRAC_CRO
+:param date: Any date parsable by pandas.to_datetime
+:type date: str or date-like
+:param domain: Domain string (eg, .12US1.35L.)
+:type domain: str</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>lufrac_cro</strong> – File from S3 loaded into memory.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>xarray.Dataset</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="epaaws.mp2022.open_metbdy3d">
+<span class="sig-prename descclassname"><span class="pre">epaaws.mp2022.</span></span><span class="sig-name descname"><span class="pre">open_metbdy3d</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">date</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">domain</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'.12US1.35L.'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cache</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#epaaws.mp2022.open_metbdy3d" title="Permalink to this definition">¶</a></dt>
+<dd><p>open a METBDY3D
+:param date: Any date parsable by pandas.to_datetime
+:type date: str or date-like
+:param domain: Domain string (eg, .12US1.35L.)
+:type domain: str</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>metbdy3d</strong> – File from S3 loaded into memory.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>xarray.Dataset</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="epaaws.mp2022.open_metcro2d">
+<span class="sig-prename descclassname"><span class="pre">epaaws.mp2022.</span></span><span class="sig-name descname"><span class="pre">open_metcro2d</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">date</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">domain</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'.12US1.35L.'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cache</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#epaaws.mp2022.open_metcro2d" title="Permalink to this definition">¶</a></dt>
+<dd><p>open a METCRO2D
+:param date: Any date parsable by pandas.to_datetime
+:type date: str or date-like
+:param domain: Domain string (eg, .12US1.35L.)
+:type domain: str</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>metcro2d</strong> – File from S3 loaded into memory.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>xarray.Dataset</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="epaaws.mp2022.open_metcro3d">
+<span class="sig-prename descclassname"><span class="pre">epaaws.mp2022.</span></span><span class="sig-name descname"><span class="pre">open_metcro3d</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">date</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">domain</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'.12US1.35L.'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cache</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#epaaws.mp2022.open_metcro3d" title="Permalink to this definition">¶</a></dt>
+<dd><p>open a METCRO3D
+:param date: Any date parsable by pandas.to_datetime
+:type date: str or date-like
+:param domain: Domain string (eg, .12US1.35L.)
+:type domain: str</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>metcro3d</strong> – File from S3 loaded into memory.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>xarray.Dataset</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="epaaws.mp2022.open_metdot3d">
+<span class="sig-prename descclassname"><span class="pre">epaaws.mp2022.</span></span><span class="sig-name descname"><span class="pre">open_metdot3d</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">date</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">domain</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'.12US1.35L.'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cache</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#epaaws.mp2022.open_metdot3d" title="Permalink to this definition">¶</a></dt>
+<dd><p>open a METDOT3D
+:param date: Any date parsable by pandas.to_datetime
+:type date: str or date-like
+:param domain: Domain string (eg, .12US1.35L.)
+:type domain: str</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>metdot3d</strong> – File from S3 loaded into memory.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>xarray.Dataset</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="epaaws.mp2022.open_soi_cro">
+<span class="sig-prename descclassname"><span class="pre">epaaws.mp2022.</span></span><span class="sig-name descname"><span class="pre">open_soi_cro</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">date</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">domain</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'.12US1.35L.'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cache</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#epaaws.mp2022.open_soi_cro" title="Permalink to this definition">¶</a></dt>
+<dd><p>open a SOI_CRO
+:param date: Any date parsable by pandas.to_datetime
+:type date: str or date-like
+:param domain: Domain string (eg, .12US1.35L.)
+:type domain: str</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>soi_cro</strong> – File from S3 loaded into memory.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>xarray.Dataset</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-epaaws.util">
+<span id="epaaws-util-module"></span><h2>epaaws.util module<a class="headerlink" href="#module-epaaws.util" title="Permalink to this heading">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="epaaws.util.open_date">
+<span class="sig-prename descclassname"><span class="pre">epaaws.util.</span></span><span class="sig-name descname"><span class="pre">open_date</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">date</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tmpl</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bucket</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cache</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/epaaws/util.html#open_date"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#epaaws.util.open_date" title="Permalink to this definition">¶</a></dt>
+<dd><p>Open all files for specific date</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>date</strong> (<em>str</em>) – Date parsable by pandas.to_datetime</p></li>
+<li><p><strong>tmpl</strong> (<em>str</em>) – strftime template for date file (e.g., MCIP/GRIDCRO2D.12US1.35L.%y%m%d)</p></li>
+<li><p><strong>bucket</strong> (<em>str</em>) – Bucket to pull from (e.g., )</p></li>
+<li><p><strong>cache</strong> (<em>bool</em>) – Store file to prevent re-downloading.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>ds</strong> – File opened (either in memory or from disk)</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>xarray.Dataset</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-epaaws">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-epaaws" title="Permalink to this heading">¶</a></h2>
+<p>Library of functions to facilitate analysis interaction with EPA’s data on
+AWS S3 buckets thru Amazon’s Registry of Open Data.[1] At present, this only
+includes the epa-2022-modeling-platform (see module mp2022).</p>
+<p>Citations:
+1. <a class="reference external" href="https://registry.opendata.aws/epa-2022-modeling-platform/">https://registry.opendata.aws/epa-2022-modeling-platform/</a></p>
+<section id="install-for-python3">
+<h3>Install for Python3<a class="headerlink" href="#install-for-python3" title="Permalink to this heading">¶</a></h3>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>epaaws
+</pre></div>
+</div>
+<p class="rubric">Example</p>
+<p>Example of how to plot the terrain height from a GRIDCRO2D file.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">epaaws</span>
+
+<span class="n">f</span> <span class="o">=</span> <span class="n">epaaws</span><span class="o">.</span><span class="n">mp2022</span><span class="o">.</span><span class="n">open_gridcro2d</span><span class="p">(</span><span class="s1">&#39;2022-01-01&#39;</span><span class="p">)</span>
+<span class="n">levels</span> <span class="o">=</span> <span class="p">[</span><span class="o">-</span><span class="mi">100</span><span class="p">,</span> <span class="o">-</span><span class="mi">10</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">200</span><span class="p">,</span> <span class="mi">400</span><span class="p">,</span> <span class="mi">800</span><span class="p">,</span> <span class="mi">1600</span><span class="p">,</span> <span class="mi">3200</span><span class="p">]</span>
+<span class="n">f</span><span class="p">[</span><span class="s1">&#39;HT&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">levels</span><span class="o">=</span><span class="n">levels</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;terrain&#39;</span><span class="p">)</span>
+<span class="n">f</span><span class="o">.</span><span class="n">csp</span><span class="o">.</span><span class="n">cno</span><span class="o">.</span><span class="n">drawstates</span><span class="p">()</span>
+</pre></div>
+</div>
+</section>
+<section id="modules">
+<h3>MODULES<a class="headerlink" href="#modules" title="Permalink to this heading">¶</a></h3>
+<p>Each module provides access to.</p>
+<dl class="simple">
+<dt>mp2022 :</dt><dd><p>provides an interface to EPA’s Modeling Platform for 2022</p>
+</dd>
+<dt>util :</dt><dd><p>provides basic utilities used by all the modeling platforms</p>
+</dd>
+</dl>
+</section>
+<dl class="py function">
+<dt class="sig sig-object py" id="epaaws.open_date">
+<span class="sig-prename descclassname"><span class="pre">epaaws.</span></span><span class="sig-name descname"><span class="pre">open_date</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">date</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tmpl</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bucket</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/epaaws.html#open_date"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#epaaws.open_date" title="Permalink to this definition">¶</a></dt>
+<dd><p>Open all files for specific date</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>date</strong> (<em>str</em>) – Date parsable by pandas.to_datetime</p></li>
+<li><p><strong>tmpl</strong> (<em>str</em>) – strftime template for date file (e.g., MCIP/GRIDCRO2D.12US1.35L.%y%m%d)</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">epaaws</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Table of Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Welcome to epaaws’s documentation!</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../auto_examples/index.html">epaaws Examples</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">epaaws package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#subpackages">Subpackages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-epaaws.mp2022">epaaws.mp2022 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-epaaws.util">epaaws.util module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-epaaws">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="modules.html">epaaws</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="../auto_examples/plot_gridcro2d.html" title="previous chapter">GRIDCRO2D Terrain Height Plot</a></li>
+      <li>Next: <a href="epaaws.tests.html" title="next chapter">epaaws.tests package</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2024, Barron H. Henderson.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 7.0.1</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 0.7.16</a>
+      
+      |
+      <a href="../_sources/api/epaaws.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
