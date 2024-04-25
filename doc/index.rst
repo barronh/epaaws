@@ -19,7 +19,7 @@ Install for Python3
 
 .. code-block:: sh
 
-    python -m pip git+https://github.com/barronh/epaaws.git
+    python -m pip epaaws
 
 Example
 -------

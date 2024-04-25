@@ -8,7 +8,7 @@ The examples assume that you have installed epaaws:
 
 .. code-block:: bash
 
-    python -m pip install git+https://github.com/barronh/epaaws.git
+    python -m pip install epaaws
 
 
 After that, you can copy or download the code to run it.

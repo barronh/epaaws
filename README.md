@@ -17,7 +17,7 @@ Install for Python3
 -------------------
 
 ```bash
-python -m pip git+https://github.com/barronh/epaaws.git
+python -m pip epaaws
 ```
 
 Example

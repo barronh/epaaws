@@ -34,3 +34,12 @@ dependencies = [
     "matplotlib >= 3.0.0",
 ]
 requires-python = ">=3.9"
+
+[tool.setuptools.packages.find]
+include = ["epaaws"]
+
+[tool.distutils.bdist_wheel]
+universal = true
+
+[build-system]
+requires = ["wheel", "setuptools"]

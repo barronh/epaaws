@@ -5,7 +5,7 @@ GRIDCRO2D Terrain Height Plot
 This example shows how to create a plot of terrain heigh from one day of EPA MCIP."""
 
 
-# !python -m pip install git+https://github.com/barronh/epaaws.git
+# !python -m pip install epaaws
 import epaaws
 
 f = epaaws.mp2022.open_gridcro2d('2022-01-01')
