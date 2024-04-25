@@ -28,9 +28,9 @@ dependencies = [
     "xarray >= 2023.12.0",
     "pandas >= 2.0.0",
     "numpy >= 1.20.0",
-    "scipy >= 1.7.3",
-    "cmaqsatproc",
-    "pycno",
-    "matplotlib >= 3.8.1",
+    "scipy >= 1.7.0",
+    "cmaqsatproc >= 0.3.1",
+    "pycno >= 0.3.0",
+    "matplotlib >= 3.0.0",
 ]
 requires-python = ">=3.9"
