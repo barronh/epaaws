@@ -17,30 +17,31 @@ Citations:
 Install for Python3
 -------------------
 
-```bash
-python -m pip git+https://github.com/barronh/epaaws.git
-```
+.. code-block:: sh
+
+    python -m pip git+https://github.com/barronh/epaaws.git
 
 Example
 -------
 
 Example of how to plot the terrain height from a GRIDCRO2D file.
 
-```python
-import epaaws
+.. code-block:: python
 
-f = epaaws.mp2022.open_gridcro2d('2022-01-01')
-levels = [-100, -10, 1, 100, 200, 400, 800, 1600, 3200]
-f['HT'].plot(levels=levels, cmap='terrain')
-f.csp.cno.drawstates()
-```
+    import epaaws
+
+    f = epaaws.mp2022.open_gridcro2d('2022-01-01')
+    levels = [-100, -10, 1, 100, 200, 400, 800, 1600, 3200]
+    f['HT'].plot(levels=levels, cmap='terrain')
+    f.csp.cno.drawstates()
+
 
 Issues
 ------
 
 If you're having any problems, open an issue on github.
 
-https://github.com/barronh/pyhms/issues
+https://github.com/barronh/epaaws/issues
 
 
 Quick Links
