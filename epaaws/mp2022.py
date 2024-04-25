@@ -30,7 +30,8 @@ for mciptype in mciptypes:
     {mciptype.lower()} : xarray.Dataset
         File from S3 loaded into memory.
     """
-    exec(f"""def open_{mciptype.lower()}(date, domain='.12US1.35L.', cache=True):
+    opts = "date, domain='.12US1.35L.', cache=True"
+    exec(f"""def open_{mciptype.lower()}({opts}):
     \"\"\"{tdoc}\"\"\"
     bucket = 'epa-2022-modeling-platform'
     tmpl = f'MCIP/{mciptype}{{domain}}%y%m%d'
